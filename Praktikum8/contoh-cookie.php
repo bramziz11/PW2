@@ -1,0 +1,29 @@
+<?php
+    $value ="Ini Cockie pertama";
+    if(!isset($_COOKIE['first_cookkie'])){
+    setcookie("first_cookie", $value, time()+ 3600*24*30);
+    }
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Implementasi Cookie</h1>
+    <?php if(isset ($_COOKIE['first_cookie'])):?>
+        <P>?php echo $_COOKIE['first_cookie];?></P>
+    <?php else:?>
+        <P>Cookie belum di-set<P/P>
+    <?Php endif;?>
+        
+    <!-- menghapus cookie -->
+     <php
+     if(isset($_COOKIE['first_cookie'])){
+     setcookie('first_cookie');
+     }
+     ?>
+    
+</body>
+</html>
